@@ -34,17 +34,17 @@ This type of architecture could be used to support a single command-line applica
 
 ## Installation
 
-This application assumes that you have cloned it, and the Joomla Platform (you need to use [eBay's fork](https://github.com/eBaySF/joomla-platform/tree/mvc) for now because this example uses the new proposed MVC) into a folder called "joomla" under the same parent. For example:
+This application assumes that you have cloned it and the Joomla Platform into a folder called "joomla" under the same parent. For example:
 
 <pre>/parent
 ../Bach    &lt;-- this repository
-../joomla  &lt;-- eBay's platform</pre>
+../joomla  &lt;-- the Joomla platform</pre>
 
 The simplest way to do this is like this:
 
 <pre>mkdir Composers
 cd Composers
-git clone git://github.com/ebaysf/joomla-platform.git joomla
+git clone git://github.com/joomla/joomla-platform.git joomla
 git clone git://github.com/eddieajau/jc-bach.git Bach</pre>
 
 Such a setup will allow the application to auto-discover the Joomla Platform. Alternatively, you can configure some environment variables so that your applications know where to find the Joomla Platform (probably the way you would do it on the production server).
